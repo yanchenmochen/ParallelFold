@@ -190,7 +190,9 @@ def predict_structure(
     pickle.dump(feature_dict, f, protocol=4)
 
   timings['features'] = time.time() - t_0
-
+  print("feature extraction spend time: ", timings['features'])
+  print("feature extraction Completed succesfully")
+  
   if run_feature:
     return 0
 
